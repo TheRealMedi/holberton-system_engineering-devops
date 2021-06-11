@@ -1,0 +1,1 @@
+pwd Comando basico de shell que muestra en pantalla la ruta del working directory
