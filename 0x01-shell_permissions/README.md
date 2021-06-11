@@ -7,8 +7,8 @@
 6 chmod ug+x,o+r hello
 7 chmod ugo+x hello 
 8 chmod 007 hello
-9 ls -l hello
-10
+9 chmod 753 hello
+10 chmod --reference  
 11
 12
 13
