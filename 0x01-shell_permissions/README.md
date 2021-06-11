@@ -10,5 +10,5 @@
 9 chmod 753 hello
 10 chmod --reference  
 11 chmod -R ugo+X *
-12
-13
+12 mkdir -m 751 dir_holberton
+13 chgrp holberton hello
