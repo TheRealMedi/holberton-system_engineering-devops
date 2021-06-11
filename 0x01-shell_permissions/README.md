@@ -5,9 +5,9 @@
 4 touch hello          
 5 chmod u+x hello     
 6 chmod ug+x,o+r hello
-7
-8
-9
+7 chmod ugo+x hello 
+8 chmod 007 hello
+9 ls -l hello
 10
 11
 12
