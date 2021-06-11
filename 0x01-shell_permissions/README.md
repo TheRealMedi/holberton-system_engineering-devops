@@ -1,10 +1,10 @@
 0 su betty            change user 
 1 whoami              prints the current user
 2 groups              prints the groups the current user is part of
-3 chown betty /hello   
+3 chown betty hello   
 4 touch hello          
-5 
-6
+5 chmod u+x hello     
+6 chmod ug+x,o+r hello
 7
 8
 9
