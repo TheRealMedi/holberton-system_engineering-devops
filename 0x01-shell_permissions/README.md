@@ -12,3 +12,7 @@
 11 chmod -R ugo+X *
 12 mkdir -m 751 dir_holberton
 13 chgrp holberton hello
+14 chown betty:holberton *
+15
+16 
+17 telnet towel.blinkenlights.nl
