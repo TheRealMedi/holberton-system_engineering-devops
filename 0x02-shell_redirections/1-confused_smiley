@@ -1,3 +1,2 @@
 #!/bin/bash
-printf "(Ôo)'\n 
-
+printf "%s\n" "$(Ôo)"
