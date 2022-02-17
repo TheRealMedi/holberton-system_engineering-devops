@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+global_ls=$(ls)
+for i in $global_ls; do
+    echo "$i" | cut -d '-' -f2
+done
