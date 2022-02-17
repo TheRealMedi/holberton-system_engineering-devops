@@ -1,14 +1,13 @@
 #!/usr/bin/env bash
 #Script which displays bad/good luck with cases.
 i=0
-
 while [ $i -le 20 ]
 do
-    echo "$i"
+    echo $i
     case $i in
         "4") echo "Bad luck from China";;
         "9") echo "Bad luck from Japan";;
         "17") echo "Bad luck from Italy";;
     esac
-    (( i++ ))
+    i=$(( i++))
 done
