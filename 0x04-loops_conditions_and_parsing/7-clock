@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#Script which displays a clock.
 hours=0
 
 while [ $hours -le 12 ]

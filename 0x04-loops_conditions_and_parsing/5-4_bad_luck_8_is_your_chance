@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#Script which displays bad/good luck with cases.
 i=0
 
 while [ $i -lt 10 ]

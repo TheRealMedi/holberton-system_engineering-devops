@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#Script which displays Holberton school 10 times using until.
 i=0
 
 until [ $i -eq 10 ]

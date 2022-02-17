@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script is displaying information using cut
+# This script is displaying information using cut.
 global_ls=$(ls)
 for i in $global_ls; do
     echo "$i" | cut -d '-' -f2
