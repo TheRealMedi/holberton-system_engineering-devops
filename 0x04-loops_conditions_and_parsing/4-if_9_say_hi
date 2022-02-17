@@ -8,6 +8,6 @@ do
     then
         echo "Hi"
     fi
-    echo "Best school"
+    echo "Best School"
     (( i++ ))
 done
