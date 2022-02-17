@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #Script which displays Holberton school 10 times using for.
-for ((i=0;i<10;i++))
+for num in {1..10}
 do
-    echo "Holberton School"
+    echo "Best School"
 done
