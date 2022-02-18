@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#Script which termiate 7-highlander PID
+pkill -f 7-highlander

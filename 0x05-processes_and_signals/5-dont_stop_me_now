@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#Script which terminate a PID.
+Pkill "$(pgrep -f 4-to_infinity_and_beyond)"

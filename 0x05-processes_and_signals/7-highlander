@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#This script displays "To infinity and beyond" indefinitely
+_no_kill() {
+  echo "I am invincible!!!"
+}
+
+trap _no_kill SIGTERM
+
+while true
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
