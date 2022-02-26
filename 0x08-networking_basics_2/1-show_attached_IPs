@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Script which displays all active ipv4 on the current machine.
+
+ifconfig | grep 'netmask' | awk '{print $2}'
