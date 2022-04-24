@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Installing nginx thru server ssh connection
+
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt install -y nginx
+
+sudo chown -R ubuntu /var/www
+echo "Hello World" > /var/www/html/index.html
+
+sudo service nginx
