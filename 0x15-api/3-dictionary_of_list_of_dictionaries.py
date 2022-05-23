@@ -1,19 +1,18 @@
 #!/usr/bin/python3
-"""Dicitonary of all empolyees"""
+"""Exports to-do list information of all employees to JSON format."""
 import json
 import requests
 
-
 if __name__ == "__main__":
-    r = requests.get('https://jsonplaceholder.typicode.com/users')
-    users = r.json()
-    r = requests.get('https://jsonplaceholder.typicode.com/todos')
-    tasks = r.json()
-    dic = {str(d.get('id')): [{'username': d.get('username'),
-                               'task': i.get('title'), 'completed':
-                               i.get('completed')}
-                              for i in tasks
-                              if i.get('userId') == d.get('id')]
-           for d in users}
-    with open('todo_all_employees.json', 'w') as json_file:
-        json.dump(dic, json_file)
+    url = "https://jsonplaceholder.typicode.com/"
+    users = requests.get(url + "users").json()
+
+    with open("todo_all_employees.json", "w") as jsonfile:
+        json.dump({
+            u.get("id"): [{
+                "task": t.get("title"),
+                "completed": t.get("completed"),
+                "username": u.get("username")
+            } for t in requests.get(url + "todos",
+                                    params={"userId": u.get("id")}).json()]
+            for u in users}, jsonfile)
